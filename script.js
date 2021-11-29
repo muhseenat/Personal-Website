@@ -25,7 +25,7 @@ function emailCheck(){
     var regex=/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
     if (emailVal==""){
         //console.log("email input is empty");
-        $("#email-error").html("Field is empty")
+        $("#email-error").html("Wrong input")
         $("#email").css({'border':'solid 1px red'})
         emailTest=false;
 
