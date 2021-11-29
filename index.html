@@ -412,7 +412,7 @@
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input  onkeyup="phoneCheck()" type="tel"  oninput="this.value=this.value.replace(/[^\d]/,'')"  class="form-control" maxlength="10" name="subject" id="phone" placeholder="Phone" required>
+                              <input  onkeyup="phoneCheck()" type="tel"  oninput="this.value=this.value.replace(/[^\d]/,'')"  class="form-control" maxlength="10" minlength="10"  name="subject" id="phone" placeholder="Phone" required>
                               <p id="phone-error" style="color: red;font-style: italic;"></p>
                             </div>
                             </div>
