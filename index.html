@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal Website</title>
+  <title>Muhseena </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -396,8 +396,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form method="post" role="form" class="php-email-form" id="contact-form" 
-                      action="https://script.google.com/macros/s/AKfycbwv9SC-KhJwJjrpkKq3gSyH279Olk5F6w7MH241/exec">
+                      <form role="form" class="php-email-form" id="contact-form" >
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -488,6 +487,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+
   <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -510,8 +510,7 @@
   $("#contact-form").submit((e)=>{
       e.preventDefault()
       $.ajax({
-          url:"https://script.google.com/macros/s/AKfycbwv9SC-KhJwJjrpkKq3gSyH279Olk5F6w7MH241/exec",
-          url:"",
+          url:"https://script.google.com/macros/s/AKfycby5K9IK6D4HyljC1wVfmRgM2iNbs2gnBEvfZsTYMS5b8CiXe8KeWkdl51DMo_N60EQYpg/exec",
           data:$("#contact-form").serialize(),
           method:"post",
           success:function (response){
