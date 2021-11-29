@@ -57,26 +57,34 @@ function phoneCheck(){
         $('#phone').css({'border':'solid 1px red'})
         phnTest=false;
     }
-    else if(phnVal.match(regex) && (phnVal.length==10)){
+    else if(phnVal.match(regex) && (phnVal.length == 10)){
         //console.log(phnVal);
         $('#phone-error').html("")
         $('#phone').css({'border':'solid 1px black'})
         phnTest=true;
     }
-    else if(phnVal.length>10){
+    else if(phnVal.length<10){
       if(phnVal.match(regex)){
-          $('phone-error').html("Only ten number is allowed ")
+          $('#phone-error').html("Invalid phone number")
           $('#phone').css({'border':'solid 1px red'})
           phnTest=false;
       }
+    }
+    else if(phnVal.length>10){
+        if(phnVal.match(regex)){
+            $('#phone-error').html("Invalid phone number")
+            $('#phone').css({'border':'solid 1px red'})
+            phnTest=false;
+             }
+            
       else{
-        $('phone-error').html("Use only numbers ")
+        $('#phone-error').html("Use only numbers ")
         $('#phone').css({'border':'solid 1px red'})
         phnTest=false;
       }
     }
     else{
-        $('phone-error').html("Invalid number ")
+        $('#phone-error').html("Invalid number ")
         $('#phone').css({'border':'solid 1px red'})
         phnTest=false;
     }
