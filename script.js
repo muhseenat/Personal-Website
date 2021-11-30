@@ -14,7 +14,7 @@ function nameCheck() {
     else if(nameVal.match(regex)){
         $("#name-error").html("")
         $("#name").css({'border':'solid 1px black'})
-        nameTest=True;
+        nameTest=true;
         }
     
 }
@@ -93,35 +93,3 @@ function phoneCheck(){
 }
 
 
-
-//var form=document.getElementById("contact-form");
-
-
-
-
-//form.addEventListener('submit',(e) =>   
-$("contact-form").submit((e)=>{
-  e.preventDefault()
-  //console.log("Form is submitted..")
-  if(nameTest==true && emailTest==true && phnTest==true){
-    $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbwv9SC-KhJwJjrpkKq3gSyH279Olk5F6w7MH241/exec",
-        data:$("#contact-form").serialize(),
-        method:"post",
-        success:function (response){
-            alert("Form submitted successfully")
-            window.location.reload()
-            //window.location.href="https://google.com"
-        },
-        error:function (err){
-            alert("Something Error")
-
-        }
-    })
-}else{
-  nameCheck() 
-  phoneCheck()
-  emailCheck()
-  }
-
-})
