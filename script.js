@@ -1,5 +1,5 @@
 
-let nameTest,emailTest,phnTest;
+let nameTest,emailTest,phnTest,commentTest;
 
 function nameCheck() {
     var nameVal=document.getElementById("name").value
@@ -25,7 +25,7 @@ function emailCheck(){
     var regex=/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
     if (emailVal==""){
         //console.log("email input is empty");
-        $("#email-error").html("Field is empty")
+        $("#email-error").html("Field is required")
         $("#email").css({'border':'solid 1px red'})
         emailTest=false;
 
@@ -53,7 +53,7 @@ function phoneCheck(){
     var regex=/^\d+$/;
      if(phnVal=="" || phnVal==" "){
         //console.log("input field is empty");
-        $("#phone-error").html("Input field is empty")
+        $("#phone-error").html("Field is required")
         $('#phone').css({'border':'solid 1px red'})
         phnTest=false;
     }
@@ -91,5 +91,4 @@ function phoneCheck(){
     
 
 }
-
 

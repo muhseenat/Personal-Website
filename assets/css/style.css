@@ -751,12 +751,6 @@ a:hover {
     padding-left: 0rem;
   }
 }
-@media (max-width: 1000px) {
-  .service-box {
-    padding: 2.5rem 3.3rem;
-  
-  }
-}
 
 .skill-mf span {
   color: #4e4e4e;
